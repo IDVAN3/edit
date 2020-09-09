@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Редактирование магазина</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper__content">
+
+            <header style="height:66px;" class="header">
+                <div class="nav-toggle" style="margin-left:40px;">
+                    <button onclick="return false;" class="nav-toggle__btn">Меню</button>
+                </div>
+                <nav class="main-nav d-none d-lg-block">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="http://readytobuystor.wpengine.com/product_category/kupit/" class="main-nav__link main-nav__link_buy">Buy</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="http://office.readytobuystore.com" class="main-nav__link main-nav__link_sell">Sell</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="http://office.readytobuystore.com" class="main-nav__link main-nav__link_ready">Ready to buy</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="http://office.readytobuystore.com" class="main-nav__link main-nav__link_business">Business</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-bar">
+                    <div class="user-bar__main user-bar__drop">
+                        <div class="user-bar__inner user-bar__toggle">
+                            <div class="user-bar__img"> <img id="ctl00_imgAvatar" alt="" src="img/user-avatar.jpg" width="40" height="40"> </div>
+                            <div class="user-bar__name">Кузнецов</div>
+                        </div>
+                        <div class="user-bar__dropdown">
+                            <ul class="user-menu">
+                                <li class="user-menu__item"> <a href="/ru-RU/Default.aspx" class="user-menu__link">Главная</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/Self/Default.aspx" class="user-menu__link">Профиль</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/structure/Default.aspx" class="user-menu__link">Структура</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/account/Default.aspx" class="user-menu__link">Личный счет</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/bonuses/Default.aspx" class="user-menu__link">Бонусы</a> </li>
+                                <li class="user-menu__item"> <a href="/SignOut.aspx" class="user-menu__link">Выход</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-bar__lang">
+                        <a href="/en-US/test/Default.aspx" class="user-lang__lang-btn"> <img src="img/svg/ico-flag-eng.svg" width="30" height="20" alt=""> </a>
+                    </div>
+                    <div id="ctl00_CartInfoSmallPanel1_updCartInfo">
+                        <div class="user-bar__cart">
+                            <a href="#" class="user-bar__cart-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="header-hreplacer" style="height: 66px;"></div>
+            <div class="slide-nav">
+                <div class="slide-nav__head">Меню</div>
+                <div class="slide-nav__body">
+                    <ul class="slide-nav__menu">
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/Orderonline/Default.aspx" class="slide-nav__link">Заказ онлайн</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/cuorder/Default.aspx" class="slide-nav__link">Пополнение счета CU</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/cupay/Default.aspx" class="slide-nav__link">Мои заказы</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/PointsHistory/Default.aspx" class="slide-nav__link">История баллов</a> </li>
+                        <li style="display:none;" class="slide-nav__item"> <a href="/ru-RU/MyOrders/contract-offer/Default.aspx" class="slide-nav__link">Заказать договор</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/cuFillUp/Default.aspx" class="slide-nav__link">Пополнение счета CU с персонального</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide-overlay"></div>
+            <!-- Тело============================================================================== -->
+            <main>
+                <!-- Хлебные крошки==================================================================== -->
+                <section class="breadcrumbs">
+                    <div class="container">
+                        <a href="#">Home</a>
+                        <a href="#">Buy</a>
+                        <a href="#">Beauty</a>
+                        <a href="#">Face</a>
+                        <span>Face cream</span>
+                    </div>
+                </section>
+
+                <!-- Заголовок страницы================================================================ -->
+                <section class="page_name">
+                    <div class="container">
+                        <h1>Редактирование магазина</h1>
+                    </div>
+                </section>
+
+                <!-- Состояние==================================================================== -->
+                <section class="edit-sub">
+                    <div class="container">
+                        <div class="wrapper-edit">
+                            <div class="edit-left">
+                                <div class="edit__item">Не создан</div>
+                                <div class="edit__item edit-orange">На модерации</div>
+                                <div class="edit__item edit-green">Подтверждён</div>
+                                <div class="edit__item edit-pink">Отклонён</div>
+                            </div>
+                            <div class="edit-right">
+                                <div class="edit__item">
+                                    <a href="#" class="edit__link">https://www.readytobuystore.com/qrona/</a>
+                                </div>
+                                <img src="img/qr.png" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Редактирование==================================================================== -->
+                <section class="edit_page">
+                    <div class="container">
+                        <div class="edit_page__inner">
+                            <form data-toggle="validator" role="form">
+                                <div class="form-group">
+                                    <p class="edit_page__label">Название магазина</p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <input type="text" class="edit_page__input" placeholder="Название магазина" required name="item_name" data-error="Поле не может быть пустым. Пожалуйста, заполните ">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="edit_page__label">Быстрая ссылка для магазина</p>
+                                    <div class="row">
+                                        <div class="col-lg-3 center-block">
+                                            <a href="#" class="shop__link">https://readytobuystore.com/</a>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="edit_page__input" placeholder="Название магазина" required name="item_name" data-error="Поле не может быть пустым. Пожалуйста, заполните ">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="help-block with-errors">
+                                                        <!-- Добавить класс errors для отображения ошибки -->
+                                                        <div class="error-name">Пожалуйста, выберите другое название, данный адрес уже занят</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="edit_page__label">Описание магазина</p>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <textarea data-error="Поле не может быть пустым. Пожалуйста, заполните" required class="edit_page__input textarea__big" placeholder="Описание"></textarea>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="edit_page__label">Логотип магазина</p>
+                                    <p class="edit-page__subtitle">Рекомендуем загружать логотипы на прозрачном или белом фоне</p>
+                                    <div class="row">
+                                        <div class="col-lg-12 sbw">
+                                            <div class="all-img">
+                                                <div class="edit-circle" style="background-image: url(img/tiger.png)">
+                                                    <button type="button" class="edit_page__photo_btn delete-edit"></button>
+                                                </div>
+                                            </div>
+                                            <div class="add-imgs">
+                                                <div class="edit-circle add-circle">
+                                                    <button class="add-img__more">Добавить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="edit_page__label">Комментарий продавца</p>
+                                    <p class="edit-page__subtitle">В данном поле Вы можете задать вопрос модератору. Комментарий видит только модератор.</p>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <textarea data-error="Поле не может быть пустым. Пожалуйста, заполните" required class="edit_page__input textarea__big" placeholder="Комментарий"></textarea>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="edit_page__label">Комментарий модератора</p>
+                                    <p class="edit-page__subtitle">В данном поле Вы можете увидеть ответ на вопрос, рекомендации к улучшению описания и т.д.</p>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <textarea data-error="Поле не может быть пустым. Пожалуйста, заполните" required class="edit_page__input textarea__big" placeholder="Комментарий"></textarea>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-edit__agree pad-top">
+                                    <label class="checkbox">
+                                        <input type="checkbox" checked="">
+                                        <span class="checkbox__text">С <a href="#modal-agree" data-fancybox="" class="checkbox__link">правовыми положениями</a> проекта ознакомлен и согласен</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-edit__action ">
+                                        <div class="form-edit__unit">
+                                            <button class="button button_green button_uppercase btn-width">Опубликовать</button>
+                                        </div>
+                                        <div class="form-edit__unit">
+                                            <button class="button button_green-gray button_uppercase btn-width">Сохранить</button>
+                                        </div>
+                                        <div class="form-edit__unit">
+                                            <button class="button button_orange-gray button_uppercase btn-width">На главную</button>
+                                        </div>
+                                        <div class="form-edit__unit">
+                                            <button class="button-link btn-width">Отменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </main>
+
+        </div>
+        <!-- /.wrapper__content -->
+        <div class="wrapper__footer">
+
+            <footer class="footer">
+                <div class="container">
+                    <nav class="foot-nav">
+                        <ul class="foot-nav__list">
+                            <li class="foot-nav__item"> <a href="#" class="foot-nav__link">О нас</a> </li>
+                            <li class="foot-nav__item"> <a href="#" class="foot-nav__link">Бизнес</a> </li>
+                            <li class="foot-nav__item"> <a href="/ru-RU/about/Feedback/Default.aspx" class="foot-nav__link">Контакты</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+
+        </div>
+        <!-- /.wrapper__footer -->
+    </div>
+    <!-- /.wrapper -->
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fSelect.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
