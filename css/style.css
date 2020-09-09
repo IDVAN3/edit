@@ -1979,6 +1979,8 @@ textarea::-moz-input-placeholder {
     display: none;
 }
 
+/* new__edit */
+
 .shop__link{
     font-size: 18px;
     color: #000000;
@@ -1986,9 +1988,11 @@ textarea::-moz-input-placeholder {
     line-height: 20px;
     transition: 0.4s;
 }
+
 .shop__link:hover {
     color: #0056b3;
 }
+
 .center-block{
     display: flex;
     display: -webkit-flex;
@@ -2002,6 +2006,7 @@ textarea::-moz-input-placeholder {
 
 .wrapper-edit{
     display: flex;
+    flex-wrap: wrap;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -2014,6 +2019,7 @@ textarea::-moz-input-placeholder {
 
 .edit-left{
     display: flex;
+    flex-wrap: wrap;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -2022,6 +2028,7 @@ textarea::-moz-input-placeholder {
 
 .edit-right{
     display: flex;
+    flex-wrap: wrap;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -2041,6 +2048,7 @@ textarea::-moz-input-placeholder {
     display: -o-flex;
     align-items: center;
     -webkit-align-items: center;
+    padding: 5px 0;
 }
 
 .edit-orange{
