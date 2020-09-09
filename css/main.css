@@ -1628,6 +1628,7 @@ footer a:hover {
 .edit_page__input {
     width: 100%;
     border: 1px solid #dbdbdb;
+    border-radius: 5px;
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -1762,7 +1763,7 @@ textarea.edit_page__input {
 }
 
 .edit_page__photo_btn.delete-edit:hover {
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(0, 0, 0, 1);
 }
 .edit_page__photo_btn.delete {
     top: 5px;
@@ -2847,7 +2848,4 @@ input::-webkit-inner-spin-button {
 .table-resize td {
     color: #000000;
     font-weight: 400;
-}
-.btn-width{
-    width: 230px;
 }

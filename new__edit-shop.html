@@ -104,11 +104,44 @@
                 <section class="edit-sub">
                     <div class="container">
                         <div class="wrapper-edit">
+                            <div class="fs-wrap pc-mob">
+                                <select class="hidden">
+                                    <option>
+                                        <div class="edit__item">
+                                            <a href="#">Не создан</a>
+                                        </div>
+                                    </option>
+                                    <option>
+                                        <div class="edit__item edit-orange">
+                                            <a href="#">На модерации</a>
+                                        </div>
+                                    </option>
+                                    <option>
+                                        <div class="edit__item edit-green">
+                                            <a href="#">Подтверждён</a>
+                                        </div>
+                                    </option>
+                                    <option>
+                                        <div class="edit__item edit-pink">
+                                            <a href="#">Отклонён</a>
+                                        </div>
+                                    </option>
+                                </select>
+                            </div>
                             <div class="edit-left">
-                                <div class="edit__item">Не создан</div>
-                                <div class="edit__item edit-orange">На модерации</div>
-                                <div class="edit__item edit-green">Подтверждён</div>
-                                <div class="edit__item edit-pink">Отклонён</div>
+                                <div class="edit__item">
+                                    <a href="#">Не создан</a>
+                                </div>
+                                <div class="edit__item edit-orange">
+                                    <a href="#">На модерации</a>
+                                </div>
+                                <div class="edit__item edit-green">
+                                    <a href="#">Подтверждён</a>
+                                </div>
+                                <div class="edit__item edit-pink">
+                                    <a href="#">Отклонён</a>
+                                </div>
+                                
                             </div>
                             <div class="edit-right">
                                 <div class="edit__item">
@@ -134,14 +167,14 @@
                                             <input type="text" class="edit_page__input" placeholder="Название магазина" required name="item_name" data-error="Поле не может быть пустым. Пожалуйста, заполните ">
                                         </div>
                                         <div class="col-lg-6">
-                                            <div class="help-block with-errors"></div>
+                                            <div class="help-block with-errors error-help"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <p class="edit_page__label">Быстрая ссылка для магазина</p>
                                     <div class="row">
-                                        <div class="col-lg-3 center-block">
+                                        <div class="center-block">
                                             <a href="#" class="shop__link">https://readytobuystore.com/</a>
                                         </div>
                                         <div class="col-lg-9">
@@ -171,7 +204,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <p class="edit_page__label">Логотип магазина</p>
+                                    <p class="edit_page__label mar-bot">Логотип магазина</p>
                                     <p class="edit-page__subtitle">Рекомендуем загружать логотипы на прозрачном или белом фоне</p>
                                     <div class="row">
                                         <div class="col-lg-12 sbw">
@@ -189,7 +222,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <p class="edit_page__label">Комментарий продавца</p>
+                                    <p class="edit_page__label mar-bot">Комментарий продавца</p>
                                     <p class="edit-page__subtitle">В данном поле Вы можете задать вопрос модератору. Комментарий видит только модератор.</p>
                                     <div class="row">
                                         <div class="col-lg-8">
@@ -201,7 +234,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <p class="edit_page__label">Комментарий модератора</p>
+                                    <p class="edit_page__label mar-bot">Комментарий модератора</p>
                                     <p class="edit-page__subtitle">В данном поле Вы можете увидеть ответ на вопрос, рекомендации к улучшению описания и т.д.</p>
                                     <div class="row">
                                         <div class="col-lg-8">
@@ -237,6 +270,7 @@
                             </form>
                         </div>
                     </div>
+                </section>
             </main>
 
         </div>

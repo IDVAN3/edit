@@ -2002,6 +2002,11 @@ textarea::-moz-input-placeholder {
     align-items: center;
     -webkit-align-items: center;
     padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.mar-bot{
+    margin-bottom: 5px;
 }
 
 .wrapper-edit{
@@ -2014,7 +2019,7 @@ textarea::-moz-input-placeholder {
     justify-content: space-between;
     -webkit-justify-content: space-between;
 
-    padding: 10px 0 40px 0;
+    padding: 0 0 20px 0;
 }
 
 .edit-left{
@@ -2028,6 +2033,8 @@ textarea::-moz-input-placeholder {
 
 .edit-right{
     display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
     flex-wrap: wrap;
     display: -webkit-flex;
     display: -moz-flex;
@@ -2040,6 +2047,7 @@ textarea::-moz-input-placeholder {
     font-weight: 700;
     line-height: 20px;
     color: #000000;
+    transition: 0.4s;
 
     display: flex;
     display: -webkit-flex;
@@ -2049,6 +2057,10 @@ textarea::-moz-input-placeholder {
     align-items: center;
     -webkit-align-items: center;
     padding: 5px 0;
+}
+
+.edit__item:hover{
+    opacity: 0.7;
 }
 
 .edit-orange{
@@ -2070,6 +2082,19 @@ textarea::-moz-input-placeholder {
 .edit__link{
     color: #79bdec;
     transition: 0.4s;
+    text-decoration: underline;
+}
+
+.edit__link:hover{
+    text-decoration: underline;
+}
+
+.error-help{
+    padding-top: 5px;
+}
+
+.pc-mob{
+    display: none;
 }
 
 /**
@@ -2125,6 +2150,9 @@ textarea::-moz-input-placeholder {
 }
 
 @media (max-width: 991px) {
+    .shop__link{
+        font-size: 15px;
+    }
     .user-bar__main {
         margin-right: 20px;
     }
@@ -2455,8 +2483,24 @@ textarea::-moz-input-placeholder {
 }
 
 @media (max-width: 480px){
+    .fs-wrap.pc-mob{
+        display: block;
+    }
+    .edit-left{
+        display: none;
+    }
+    .fs-label{
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
     .sbw{
-        justify-content: flex-start;
+        justify-content: center;
     }
 }
 
