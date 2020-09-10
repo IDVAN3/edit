@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/likely.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Магазин QRONA</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper__content">
+
+            <header style="height:66px;" class="header">
+                <div class="nav-toggle" style="margin-left:40px;">
+                    <button onclick="return false;" class="nav-toggle__btn">Меню</button>
+                </div>
+                <nav class="main-nav d-none d-lg-block">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="http://readytobuystor.wpengine.com/product_category/kupit/" class="main-nav__link main-nav__link_buy">Buy</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="http://office.readytobuystore.com" class="main-nav__link main-nav__link_sell">Sell</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="http://office.readytobuystore.com" class="main-nav__link main-nav__link_ready">Ready to buy</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="http://office.readytobuystore.com" class="main-nav__link main-nav__link_business">Business</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-bar">
+                    <div class="user-bar__main user-bar__drop">
+                        <div class="user-bar__inner user-bar__toggle">
+                            <div class="user-bar__img"> <img id="ctl00_imgAvatar" alt="" src="img/user-avatar.jpg" width="40" height="40"> </div>
+                            <div class="user-bar__name">Кузнецов</div>
+                        </div>
+                        <div class="user-bar__dropdown">
+                            <ul class="user-menu">
+                                <li class="user-menu__item"> <a href="/ru-RU/Default.aspx" class="user-menu__link">Главная</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/Self/Default.aspx" class="user-menu__link">Профиль</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/structure/Default.aspx" class="user-menu__link">Структура</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/account/Default.aspx" class="user-menu__link">Личный счет</a> </li>
+                                <li class="user-menu__item"> <a href="/ru-RU/bonuses/Default.aspx" class="user-menu__link">Бонусы</a> </li>
+                                <li class="user-menu__item"> <a href="/SignOut.aspx" class="user-menu__link">Выход</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-bar__lang">
+                        <a href="/en-US/test/Default.aspx" class="user-lang__lang-btn"> <img src="img/svg/ico-flag-eng.svg" width="30" height="20" alt=""> </a>
+                    </div>
+                    <div id="ctl00_CartInfoSmallPanel1_updCartInfo">
+                        <div class="user-bar__cart">
+                            <a href="#" class="user-bar__cart-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="header-hreplacer" style="height: 66px;"></div>
+            <div class="slide-nav">
+                <div class="slide-nav__head">Меню</div>
+                <div class="slide-nav__body">
+                    <ul class="slide-nav__menu">
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/Orderonline/Default.aspx" class="slide-nav__link">Заказ онлайн</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/cuorder/Default.aspx" class="slide-nav__link">Пополнение счета CU</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/cupay/Default.aspx" class="slide-nav__link">Мои заказы</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/PointsHistory/Default.aspx" class="slide-nav__link">История баллов</a> </li>
+                        <li style="display:none;" class="slide-nav__item"> <a href="/ru-RU/MyOrders/contract-offer/Default.aspx" class="slide-nav__link">Заказать договор</a> </li>
+                        <li class="slide-nav__item"> <a href="/ru-RU/MyOrders/cuFillUp/Default.aspx" class="slide-nav__link">Пополнение счета CU с персонального</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide-overlay"></div>
+            <!-- Тело============================================================================== -->
+            <main>
+                <!-- Хлебные крошки==================================================================== -->
+                <section class="breadcrumbs">
+                    <div class="container">
+                        <a href="#">Home</a>
+                        <span>Buy</span>
+                    </div>
+                </section>
+
+                <!-- Заголовок страницы================================================================ -->
+                <section class="page_name">
+                    <div class="container">
+                        <div class="wrapper-shop">
+                            <div class="shop-circle pc">
+                                <img src="img/circle-img.png" alt="">
+                            </div>
+                            <div class="shop__right">
+                                <div class="shop-circle mob">
+                                    <img src="img/circle-img.png" alt="">
+                                </div>
+                                <h1>Магазин QRONA</h1>
+                                <div class="d-flex align-items-center pad-top-shop">
+                                <div class="wrapper-button-main">
+                                    <a href="popup-0" class="js-btn-popup btn-shop">Поделиться</a>
+                                    </div>
+                                    <div class="wrapper-heart">
+                                        <a href="#">
+                                            <svg class="bg-hearth">
+                                                <use xlink:href="img/sprite.svg#hearth"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <p class="shop-text">Ready to Buy is an e-commerce platform with a conceptually new approach to online shopping.</p>
+                                <p class="shop-text">Ready to Buy supports local businesses. That is why our advanced filter system allows our clients to search for vendors 
+                                    in their countries, regions and cities. With the help of our site you can find and buy products near you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="shop-product">
+                    <div class="container">
+                        <div class="d-flex wrapper-product">
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product1.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Волшебное зеркало</h3>
+                                    <h4 class="product__subtitle">€45 (€41 + €4 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product1.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Волшебное зеркало</h3>
+                                    <h4 class="product__subtitle">€45 (€41 + €4 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product2.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Шар "Хэллоуин" 12"/30см Декоратор</h3>
+                                    <h4 class="product__subtitle">€4 (€4 + €0 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product3.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Латексная маска клоуна на Хэллоуин</h3>
+                                    <h4 class="product__subtitle">€9 (€8 + €1 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product1.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Волшебное зеркало</h3>
+                                    <h4 class="product__subtitle">€45 (€41 + €4 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product4.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Искусственная паутина, 15 м2</h3>
+                                    <h4 class="product__subtitle">€11 (€9 + €2 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product5.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Подвесная декорация на Хэллоуин</h3>
+                                    <h4 class="product__subtitle">€21 (€17 + €4 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product6.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Держатель конфет Фредди Крюгер (50 см)</h3>
+                                    <h4 class="product__subtitle">€30 (€28 + €2 in CU)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title-categories">Товары со скидками</h2>
+                        <div class="d-flex wrapper-product">
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product1.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Волшебное зеркало</h3>
+                                    <h4 class="product__subtitle">€45 (€41 + €4 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product1.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Волшебное зеркало</h3>
+                                    <h4 class="product__subtitle">€45 (€41 + €4 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product2.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Шар "Хэллоуин" 12"/30см Декоратор</h3>
+                                    <h4 class="product__subtitle">€4 (€4 + €0 in CU)</h4>
+                                </div>
+                            </div>
+                            <div class="product__item">
+                                <a href="#" class="decor">Праздничный декор</a>
+                                <div class="wrapper-product-img">
+                                    <img src="img/product3.png" alt="">
+                                </div>
+                                <div class="wrapper-product__titles">
+                                    <h3 class="product__title">Латексная маска клоуна на Хэллоуин</h3>
+                                    <h4 class="product__subtitle">€9 (€8 + €1 in CU)</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+            </main>
+
+        </div>
+        <!-- /.wrapper__content -->
+        <div class="wrapper__footer">
+
+            <footer class="footer">
+                <div class="container">
+                    <nav class="foot-nav">
+                        <ul class="foot-nav__list">
+                            <li class="foot-nav__item"> <a href="#" class="foot-nav__link">О нас</a> </li>
+                            <li class="foot-nav__item"> <a href="#" class="foot-nav__link">Бизнес</a> </li>
+                            <li class="foot-nav__item"> <a href="/ru-RU/about/Feedback/Default.aspx" class="foot-nav__link">Контакты</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+
+        </div>
+        <!-- /.wrapper__footer -->
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- popup -->
+
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup-container">
+                <div class="popup-content">
+                    <div class="wrapper-title-popup">
+                        <img src="img/popup-title.png" alt="">
+                    </div>
+                    <a href="#" class="edit__link">https://www.readytobuystore.com/qrona/</a>
+                    <div class="wrapper-qr-popup">
+                        <img src="img/popup-qr.png" alt="">
+                    </div>
+                    <div class="likely d-flex">
+                        <div class="d-flex whatsapp social-btn">Отправить в WhatsApp</div>
+                        <div class="d-flex telegram social-btn">Отправить в Telegram</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/likely.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fSelect.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

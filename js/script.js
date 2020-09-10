@@ -188,3 +188,4 @@ if (window.innerWidth < 993) {
         $(this).prepend(text + ': ');
     });
 }
+
