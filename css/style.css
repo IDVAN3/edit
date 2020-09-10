@@ -2379,6 +2379,9 @@ h1.title-shop{
 }
 
 @media (max-width: 991px) {
+    h1.title-shop{
+        font-size: 28px;
+    }
     .title-categories {
         font-size: 24px;
     }
@@ -2643,7 +2646,9 @@ h1.title-shop{
 }
 
 @media (max-width: 767px) {
-
+    .shop__right {
+        padding-left: 0px;
+    }
     .pc{
         display: none;
     }
@@ -2736,6 +2741,16 @@ h1.title-shop{
 }
 
 @media (max-width: 480px){
+    .pad-top-shop {
+        padding: 15px;
+        justify-content: center;
+    }
+    h1.title-shop{
+        text-align: center;
+    }
+    .product__item {
+        width: 100%;
+    }
     .edit__item:not(:last-child){
         padding-bottom: 15px;
     }
