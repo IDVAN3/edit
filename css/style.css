@@ -2202,13 +2202,13 @@ textarea::-moz-input-placeholder {
 
 .decor{
     position: absolute;
-    top: 15px;
+    top: 21px;
     right: 11px;
 
     border-radius: 14px;
     border: 1px solid #cecece;
     background-color: #ffffff;
-    padding: 7px 11px;
+    padding: 4px 11px;
 
     color: #bdbdbd;
     font-size: 14px;
@@ -2238,6 +2238,9 @@ textarea::-moz-input-placeholder {
 .wrapper-product-img{
     height: 152px;
     margin-bottom: 10px;
+
+    display: flex;
+    align-items: flex-end;
 }
 
 .wrapper-product__titles{
