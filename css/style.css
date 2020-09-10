@@ -2162,9 +2162,9 @@ textarea::-moz-input-placeholder {
     border: 1px solid #000;
 }
 
-.pad-top-shop{
-    padding-top: 28px;
-    padding-bottom: 26px;
+.pad-top-shop {
+    padding-top: 21px;
+    padding-bottom: 21px;
 }
 
 .shop-text{
@@ -2219,10 +2219,15 @@ textarea::-moz-input-placeholder {
     font-size: 20px;
     font-weight: 400;
     color: #000000;
-    /* padding: 0 0 20px 0; */
     line-height: 1;
     width: 100%;
+    transition: 0.4s;
 }
+
+.product__title:hover{
+    color: #bdbdbd;
+}
+
 .product__subtitle {
     font-size: 20px;
     font-weight: 600;
@@ -2304,6 +2309,16 @@ textarea::-moz-input-placeholder {
 
 .likely .likely__widget:hover{
     background: rgba(191,237,250,.8);
+}
+
+.wrapper-button-main{
+    padding: 10px 0;
+}
+
+h1.title-shop{
+    font-size: 50px;
+    font-weight: 500;
+    padding-top: 29px;
 }
 /**
 * Медиазапросы
