@@ -2145,6 +2145,48 @@ textarea::-moz-input-placeholder {
     fill: #000;
 }
 
+.bg-no {
+    width: 8px;
+    height: 16px;
+    fill: #000;
+    transition: 0.4s;
+}
+
+.bg-on {
+    width: 16px;
+    height: 16px;
+    fill: #ff9702;
+    transition: 0.4s;
+}
+
+.bg-good {
+    width: 13px;
+    height: 12px;
+    fill: #50d544;
+    transition: 0.4s;
+}
+
+.bg-bad {
+    width: 12px;
+    height: 12px;
+    fill: #ff1645;
+    transition: 0.4s;
+}
+
+.edit__item span {
+    padding-left: 11px;
+}
+
+.bg__link{
+    display: flex;
+    align-items: center;
+}
+
+.likely .likely__button{
+    padding-left: 10px;
+    font-weight: 600;
+}
+
 .btn-shop {
     padding: 10px 30px;
     border-radius: 18px;
@@ -2303,7 +2345,7 @@ textarea::-moz-input-placeholder {
     align-items: center;
 
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 20px;
     text-transform: uppercase;
     color: #a6a6a6;
