@@ -2059,9 +2059,6 @@ textarea::-moz-input-placeholder {
     padding: 5px 0;
 }
 
-.edit__item:hover{
-    opacity: 0.7;
-}
 
 .edit-orange{
     color: #ff9702;
@@ -2229,15 +2226,14 @@ textarea::-moz-input-placeholder {
 
 .product__item{
     position: relative;
-    width: 260px;
-    height: 290px;
+    width: calc(25% - 22px);
     border: 1px solid #ededed;
     background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
-    align-items: center;
     padding: 30px 20px 20px 20px;
     margin: 0 11px 20px 11px;
 }
@@ -2275,21 +2271,25 @@ textarea::-moz-input-placeholder {
     font-weight: 600;
     color: #000000;
     width: 100%;
+    padding-top: 10px;
 }
 
-.wrapper-product-img{
-    height: 152px;
+.wrapper-product-img {
+    min-height: 152px;
     margin-bottom: 10px;
 
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-product-img img{
+    max-width: 152px;;
 }
 
 .wrapper-product__titles{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 80px;
 }
 
 .title-categories{
@@ -2341,6 +2341,7 @@ textarea::-moz-input-placeholder {
     background-color: #ffffff;
     padding: 18px 24px;
 
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -2350,6 +2351,14 @@ textarea::-moz-input-placeholder {
     text-transform: uppercase;
     color: #a6a6a6;
     transition: 0.4s;
+}
+
+.likely__icon_telegram{
+    display: none;
+}
+
+.likely__icon_whatsapp{
+    display: none;
 }
 
 .likely .likely__widget:hover{
@@ -2377,6 +2386,9 @@ h1.title-shop{
 }
 
 @media (max-width: 1199px) {
+    .product__item{
+        width: calc(33.3% - 22px);
+    }
     .title-categories {
         text-align: center;
     }
@@ -2421,6 +2433,9 @@ h1.title-shop{
 }
 
 @media (max-width: 991px) {
+    .product__item{
+        width: calc(50% - 22px);
+    }
     h1.title-shop{
         font-size: 28px;
     }
